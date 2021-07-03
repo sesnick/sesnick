@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="texto">Heading</h1>
+
+<p>Paragraph.</p>
+
+<button id="button1" onclick="atualizacao()">Atualizar texto.</button>
+
+
+<p id="description">Vou treinar manipulação no DOM</p>
+
+<p>Vou treinar manipulação no DOM</p>
+
+<script type="text/javascript">
+
+    var paragrafo =  document.getElementById("description");
+    paragrafo.style.color = "blue";
+
+    paragrafo.innerText = "Vou treinar manipulação no DOM ...Texto mudou"
+
+    function atualizacao(){
+        var texto1 = document.getElementById("texto");
+        texto1.innerText = "TCHARAM!"
+    }
+</script>
+
+
+</body>
+</html>
